@@ -47,6 +47,12 @@ namespace Peek.Recording {
               _ ("FFmpeg executable not found."));
           }
           return new FfmpegScreenRecorder ();
+        case "wfrecorder":
+          if (!WfRecorder.is_available()) {
+            throw new PeekError.SCREEN_RECORDER_ERROR (
+              _ ("wf-recorder executable not found."));
+          }
+          return new WfRecorder();
         default:
           throw new PeekError.UNKNOWN_SCREEN_RECORDER (
             "Unknown screen recorder " + name);

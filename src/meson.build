@@ -24,6 +24,7 @@ peek_sources = [
   'recording/recording-config.vala',
   'recording/screen-recorder-factory.vala',
   'recording/screen-recorder.vala',
+  'recording/wf-recorder.vala',
   'ui/about-dialog.vala',
   'ui/application-window.vala',
   'ui/set-window-size-dialog.vala',
